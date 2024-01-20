@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript Swiper</title>
+    <title>Vanilla Swiper</title>
     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
-
+    <div class="wrap">
+        <div class="carousel-container">
+            <i class="fa fa-arrow-left" aria-hidden="true" id="prevBtn"></i>
+            <i class="fa fa-arrow-right" aria-hidden="true" id="nextBtn"></i>
+            
+            <ol class="carousel-slide">
+                <li class="slide-item"><img src="./img_src/p5.jpg" id="lastClone" class="img" alt=""></li>
+                <li class="slide-item"><img src="./img_src/p1.jpg" class="img" alt=""></li>
+                <li class="slide-item"><img src="./img_src/p2.jpg" class="img" alt=""></li>
+                <li class="slide-item"><img src="./img_src/p3.jpg" class="img" alt=""></li>
+                <li class="slide-item"><img src="./img_src/p4.jpg" class="img" alt=""></li>
+                <li class="slide-item"><img src="./img_src/p5.jpg" class="img" alt=""></li>
+                <li class="slide-item"><img src="./img_src/p1.jpg" class="img" id="firstClone" alt=""></li>
+            </ol>
+        </div>
+    </div>
 
     <script src="common.js"></script>
 </body>

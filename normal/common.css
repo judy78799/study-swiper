@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height:100%;
+}
+.wrap{
+    width:100%;
+    height:100vh;
+    /*carousel-container박스의 높이를 가운데로 정렬합니다*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(158, 158, 158);
+}
+.carousel-container{
+    max-width:1000px;
+    height:550px;
+    margin: 0 auto;
+    border: 3px solid rgb(255, 255, 255);
+    overflow: hidden;   
+}
+
+.carousel-slide{
+    display: flex;
+    width:500%;
+    height:100%;
+}
+
+.slide-item{
+    width:100%;
+    height:100%;
+    list-style-type: none;
+    background-color: black;
+}
+
+.slide-item .img{
+    width:1000px;
+    height:100%;
+    background-color: blue;
+}
+#prevBtn{
+    position: absolute;
+    top:50%;
+    left:5%;
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+}
+#nextBtn{
+    position: absolute;
+    top:50%;
+    z-index: 10;
+    right:5%;
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+}
