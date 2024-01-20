@@ -49,11 +49,14 @@ export default {
     .button:focus, .button:hover{
       outline:none;
       cursor: pointer;
+      z-index: 2;
     }
     .next{
       right:2vw;
+      z-index: 2;
     }
     .prev {
       left:2vw;
+      z-index: 2;
     }
 </style>
